@@ -1,7 +1,7 @@
 main{
     width: 75%;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 1000px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: 
@@ -43,7 +43,7 @@ nav li:hover{
 a{
     text-decoration: none;
     font-weight: bolder;
-    color: black
+    color: black;
 }
 .contents{
     grid-area: contents;
@@ -65,20 +65,25 @@ aside img{
 }
 article{
     grid-area: article;
-    margin: 15px;
-    text-align: center;
 }
 article img {
     width: 350px;
     border: 3px solid black;
     border-radius: 10px;
-    transform: translateY(150px);
+    transform: translateY(100px);
     opacity: 0.3;
 }
 article img:hover{
     opacity: 1;
     transition: opacity 0.5s ease;
 }
+article p {
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    padding-left: 75px;
+}
+
 footer{
     grid-area: footer;
     background-color: aquamarine;
