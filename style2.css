@@ -1,0 +1,71 @@
+main{
+    width: 75%;
+    margin: 0 auto;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "article aside"
+    "footer footer";
+    border: 2px solid black;
+    border-radius: 10px;
+}
+header{
+    grid-area: header;
+    background-image: url(kepek/header.jpeg);
+    background-size: cover;
+    height: 200px;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    transform: translateY(-10px);
+    font-size: 24px;
+}
+nav{
+    grid-area: nav;
+    background-color: aquamarine;
+    padding: 10px;
+}
+nav li{
+    display: inline;
+    list-style: none;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+nav li:hover{
+    background-color: white;
+    color: black
+}
+a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: black
+}
+article{
+    grid-area: article;
+    margin: 15px;
+    text-align: center;
+}
+article img {
+    width: 350px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+footer{
+    grid-area: footer;
+    background-color: aquamarine;
+    text-align: center;
+}
+.elso{
+    transform: translateY(50px);
+}
+.masodik{
+    transform: translateY(200px);
+}
+.harmadik{
+    transform: translateY(400px);
+}
