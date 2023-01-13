@@ -70,15 +70,15 @@ footer{
     transform: translateY(400px);
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 600px){
     main{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: 
         "header"
         "nav"
-        "article"
         "aside"
+        "article"
         "footer";
     }
 }

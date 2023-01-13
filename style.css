@@ -85,17 +85,23 @@ footer{
     text-align: center;
 }
 @media only screen and (max-width: 500px){
-    
     main{
         width: 50%;
-        max-width: 300px;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: 
         "header"
         "nav"
-        "article"
-        "aside"
+        "contents"
         "footer";
+    }
+    .contents{
+        width: 50%;
+        display: grid;
+        grid-area: contents;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "aside"
+        "article";
     }
 }
